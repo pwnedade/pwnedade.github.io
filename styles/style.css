@@ -1,0 +1,319 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    background-color: #1a1a1a;
+    background-image: url('../images/circles.png');
+    background-attachment: fixed;
+    background-size: 150% 150%;
+
+    background-position: center;
+
+
+    color: #e0e0e0;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.highlight {
+    color: #00FF8B;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+
+.header {
+    margin-top: 100px;
+    width: 50%;
+    text-align: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+.header .logo img {
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.header .logo h1 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #cccccc;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 90%;
+}
+
+
+.current-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.section-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+.evi-project {
+    font-family: 'Fira Code';
+    width: 450px;
+    padding: 15px 23px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+.evi-project h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.evi-project p {
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 15px;
+    color: #E0E0E0;
+}
+
+.evi-project a {
+    text-decoration: none;
+    text-decoration-color: #00FF8B;
+    font-size: 15px;
+    line-height: 20px;
+    color: #e0e0e0;
+}
+
+.evi-project a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+}
+
+
+.small-project {
+    font-family: consolas;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+
+.small-project h2 {
+    color: #00FF8B;
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.badge {
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+
+.project-link {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 17px;
+}
+
+
+.featured-projects {
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+footer {
+    margin-bottom: 100px;
+}
+
+.featured-projects .section-title {
+    text-align: center;
+}
+
+
+.da {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 30px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .header,
+    .current-project,
+    .featured-projects {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .header .logo {
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .header .logo h1 {
+        text-align: center;
+    }
+
+
+    .header .logo img {
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+    .section-title {
+        font-size: 1.5em;
+
+    }
+
+    .current-project {
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+
+    }
+
+    .evi-project {
+        width: 90%;
+
+        padding: 15px;
+
+    }
+
+    .container {
+        display: block;
+
+        width: 100%;
+
+        padding: 0;
+
+    }
+
+    .small-project {
+        width: 90%;
+
+        margin-bottom: 10px;
+
+    }
+
+    .badge {
+        margin: 5px 0;
+
+    }
+
+    .project-link {
+        margin-top: 10px;
+
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .header,
+    .current-project,
+    .featured-projects {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .section-title {
+        font-size: 1.3em;
+
+    }
+
+    .small-project h2 {
+        text-align: center;
+
+    }
+
+    .project-link {
+        text-align: center;
+
+    }
+
+    .deac {
+        display: none;
+    }
+}
